@@ -3,6 +3,7 @@ import header_img from "./doctorshomepage-removebg-preview.png";
 import group_profiles from "./group_profiles.png";
 import profile_pic from "./profile_pic.png";
 import contact_image from "./contact_image.png";
+import backgroundImage1 from '../assets_frontend/airplane-plane.jpg'
 import about_image from "./aboutMed.jpg";
 import logo from "./SAFARI-LOGO.png";
 import dropdown_icon from "./dropdown_icon.svg";
