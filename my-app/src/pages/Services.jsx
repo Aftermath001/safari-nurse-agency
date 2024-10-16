@@ -22,6 +22,11 @@ const Services = () => {
       description: `Incorporating the latest digital health tools, we help healthcare institutions embrace telemedicine and remote consultations. Our integration services ensure that you stay aligned with the growing global trends in healthcare technology, optimizing patient care and accessibility.`,
       icon: "💻",
     },
+    {
+      title: "IELTS Coaching",
+      description: `Join Us for a transforming Educational Experience that will increase your grades,inspire confidence and uncover your entire potential`,
+      icon: "🕒 ", 
+    },
   ];
   return (
     <div className="bg-gray-50 py-16 px-8">
@@ -52,7 +57,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-
+          
         {/* Section for Benefits and Call to Action */}
         <div className="mt-20 bg-gradient-to-r from-primary to-secondary rounded-lg py-16 px-8 text-white text-center">
           <h2 className="text-3xl font-semibold mb-6">Why Choose Us?</h2>
