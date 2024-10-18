@@ -24,7 +24,7 @@ const KeyPersonel = () => {
           <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
           <img
           className="w-full md:max-w-[360px]"
-          src={assets.doc1}
+          src={assets.maindoc}
           alt="profile_pic"
         />
           </div>
