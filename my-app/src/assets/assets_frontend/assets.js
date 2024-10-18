@@ -2,7 +2,7 @@ import appointment_img from "./appointment_img.png";
 import header_img from "./doctorshomepage-removebg-preview.png";
 import group_profiles from "./group_profiles.png";
 import profile_pic from "./profile_pic.png";
-import contact_image from "./contact_image.png";
+import contact_image from "./telephone-1460517_1920.png";
 import backgroundImage1 from '../assets_frontend/airplane-plane.jpg'
 import about_image from "./aboutMed.jpg";
 import logo from "./SAFARI-LOGO.png";
@@ -16,7 +16,7 @@ import info_icon from "./info_icon.svg";
 import upload_icon from "./upload_icon.png";
 import stripe_logo from "./stripe_logo.png";
 import razorpay_logo from "./razorpay_logo.png";
-import maindoc from "./kelum.png";
+import maindoc from "./kelum-removebg-preview.png"; 
 import doc1 from "./doc1.png";
 import doc2 from "./doc2.png";
 import doc3 from "./doc3.png";
@@ -57,6 +57,7 @@ export const assets = {
   upload_icon,
   stripe_logo,
   razorpay_logo,
+  maindoc,
 };
 
 export const specialityData = [

@@ -24,10 +24,18 @@ const Footer = () => {
         <div>
           <p className="text-xl fornt-medium mb-5"> Company</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Privacy Policy</li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about-us">About Us</a>
+            </li>
+            <li>
+              <a href="/contact-us">Contact Us</a>
+            </li>
+            <li>
+              <a href="/privacy-policy">Privacy Policy</a>
+            </li>
           </ul>
         </div>
 
@@ -35,7 +43,7 @@ const Footer = () => {
         <div>
           <p className="text-xl fornt-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>+254797246096</li>
+            <li>+254798567828</li>
             <li>safari.nurse@yahoo.com</li>
           </ul>
         </div>

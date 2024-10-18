@@ -30,7 +30,7 @@ const Testimonials = () =>  {
               </p>
               <div className="flex items-center space-x-4">
                 <div>
-                  <p className="text-primary font-semibold">Jane Doe</p>
+                  <p className="text-primary font-semibold">James Kimani</p>
                   <p className="text-gray-500 text-sm">Registered Nurse, UK</p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Testimonials = () =>  {
               </p>
               <div className="flex items-center space-x-4">
                 <div>
-                  <p className="text-primary font-semibold">John Smith</p>
+                  <p className="text-primary font-semibold">Bilhah Cheruiyot</p>
                   <p className="text-gray-500 text-sm">Medical Student, Canada</p>
                 </div>
               </div>
@@ -60,13 +60,62 @@ const Testimonials = () =>  {
               </p>
               <div className="flex items-center space-x-4">
                 <div>
-                  <p className="text-primary font-semibold">Emily Watson</p>
+                  <p className="text-primary font-semibold">Kimutai Emmanuel</p>
                   <p className="text-gray-500 text-sm">Nurse Practitioner, USA</p>
                 </div>
               </div>
             </div>
           </SwiperSlide>
+
+          {/* Slide 3 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
+              <p className="text-lg text-gray-700 mb-4 italic">
+                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+              </p>
+              <div className="flex items-center space-x-4">
+                <div>
+                  <p className="text-primary font-semibold">Agatha Mwikali</p>
+                  <p className="text-gray-500 text-sm">Pediatrician, Thailand</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          {/* Slide 3 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
+              <p className="text-lg text-gray-700 mb-4 italic">
+                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+              </p>
+              <div className="flex items-center space-x-4">
+                <div>
+                  <p className="text-primary font-semibold">Jared Ouma</p>
+                  <p className="text-gray-500 text-sm">General physician, France</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          {/* Slide 3 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
+              <p className="text-lg text-gray-700 mb-4 italic">
+                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+              </p>
+              <div className="flex items-center space-x-4">
+                <div>
+                  <p className="text-primary font-semibold">Makena Mwanga</p>
+                  <p className="text-gray-500 text-sm">Dermatologist, India</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
+
+        
+
+        
       </div>
     </div>
   );

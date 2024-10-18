@@ -15,7 +15,7 @@ const Header = () => {
                     ,<br className='hidden sm-block' />Whether you are a nurse, doctor, or healthcare worker seeking employment opportunities abroad or looking to advance your education in prestigious institutions worldwide, we are here to guide you every step of the way.
                 </p>
             </div>
-            <a className='flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300 ' href='#speciality'>
+            <a className='flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300 ' href='/contact'>
                 Book Appointment <img className='w-3'src={assets.arrow_icon} alt='arrow-icon'/>
             </a>
         </div>
