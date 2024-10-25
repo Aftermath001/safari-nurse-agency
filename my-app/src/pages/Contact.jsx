@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { assets } from '../assets/assets_frontend/assets';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
   const formVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6a906ma', 'template_g3l8q49', form.current, 'OXkFP9rEGfHmE8uMFtVk9')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send the message. Please try again.');
+      });
   };
 
   return (
@@ -31,7 +47,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <motion.form className='flex flex-col gap-4 max-w-md mx-auto' initial="hidden" animate="visible" variants={formVariants}>
+      <motion.form ref={form} onSubmit={sendEmail} className='flex flex-col gap-4 max-w-md mx-auto' initial="hidden" animate="visible" variants={formVariants}>
         <input type='text' name='name' placeholder='Your Name' required className='border p-2' />
         <input type='email' name='email' placeholder='Your Email' required className='border p-2' />
         <textarea name='message' placeholder='Your Message' required className='border p-2' />
@@ -51,20 +67,7 @@ export default Contact;
 // import emailjs from 'emailjs-com';
 
 // const Contact = () => {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-//       .then((result) => {
-//           console.log(result.text);
-//           alert('Message sent successfully!');
-//       }, (error) => {
-//           console.log(error.text);
-//           alert('Failed to send the message. Please try again.');
-//       });
-//   };
+ 
 
 //   return (
 //     <div>

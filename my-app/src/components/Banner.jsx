@@ -33,7 +33,7 @@ const Banner = () => {
       >
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-white">
           <p>Book Appointment</p>
-          <p>With Safari Nursing Agency</p>
+          <p>With Safari Nurse Agency</p>
         </div>
         <motion.button
           onClick={() => {
