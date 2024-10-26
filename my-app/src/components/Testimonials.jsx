@@ -26,7 +26,7 @@ const Testimonials = () =>  {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <p className="text-lg text-gray-700 mb-4 italic">
-                “Safari Nursing Agency made my transition abroad seamless! Their support through the entire process was unmatched.”
+                “Safari Nurse Agency connected me with my dream job abroad, and their support throughout the process was exceptional!”
               </p>
               <div className="flex items-center space-x-4">
                 <div>
@@ -41,7 +41,7 @@ const Testimonials = () =>  {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <p className="text-lg text-gray-700 mb-4 italic">
-                “Thanks to Safari Nursing, I’m now studying in Canada with a scholarship! Couldn’t have done it without them.”
+                “The team at Safari Nurse Agency was compassionate, professional, and made the entire recruitment process seamless."”
               </p>
               <div className="flex items-center space-x-4">
                 <div>
@@ -56,7 +56,7 @@ const Testimonials = () =>  {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <p className="text-lg text-gray-700 mb-4 italic">
-                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+                “Thanks to Safari Nurse Agency, I received top-notch training and landed a life-changing opportunity in healthcare.”
               </p>
               <div className="flex items-center space-x-4">
                 <div>
@@ -67,11 +67,11 @@ const Testimonials = () =>  {
             </div>
           </SwiperSlide>
 
-          {/* Slide 3 */}
+          {/* Slide 4 */}
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <p className="text-lg text-gray-700 mb-4 italic">
-                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+                “I’m forever grateful to Safari Nurse Agency for helping me find a job that aligns with my skills and passion for patient care.”
               </p>
               <div className="flex items-center space-x-4">
                 <div>
@@ -82,11 +82,11 @@ const Testimonials = () =>  {
             </div>
           </SwiperSlide>
 
-          {/* Slide 3 */}
+          {/* Slide 5 */}
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <p className="text-lg text-gray-700 mb-4 italic">
-                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+                “Their commitment to excellence and the well-being of nurses truly sets Safari Nurse Agency apart from the rest.”
               </p>
               <div className="flex items-center space-x-4">
                 <div>
@@ -97,11 +97,11 @@ const Testimonials = () =>  {
             </div>
           </SwiperSlide>
 
-          {/* Slide 3 */}
+          {/* Slide 6 */}
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <p className="text-lg text-gray-700 mb-4 italic">
-                “Their dedication and professionalism made all the difference. I highly recommend Safari Nursing Agency!”
+                “I’ve never felt more supported in my career journey—Safari Nurse Agency is the best recruitment agency for healthcare professionals!”
               </p>
               <div className="flex items-center space-x-4">
                 <div>

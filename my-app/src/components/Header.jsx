@@ -35,7 +35,7 @@ const Header = () => {
         <motion.div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
           <img className='w-28' src={assets.group_profiles} alt='group profiles'/>
           <p>
-            At Safari Nursing Agency, we are dedicated to helping healthcare professionals embark on a global journey of excellence,<br className='hidden sm:block' />
+            At Safari Nurse Agency, we are dedicated to helping healthcare professionals embark on a global journey of excellence,<br className='hidden sm:block' />
             Whether you are a nurse, doctor, or healthcare worker seeking employment opportunities abroad or looking to advance your education in prestigious institutions worldwide, we are here to guide you every step of the way.
           </p>
         </motion.div>

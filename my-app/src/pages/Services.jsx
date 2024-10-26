@@ -94,7 +94,7 @@ const Services = () => {
         >
           <h2 className="text-3xl font-semibold mb-6">Why Choose Us?</h2>
           <p className="text-lg mb-10">
-            Safari Nursing Agency is committed to helping nurses advance their
+            Safari Nurse Agency is committed to helping nurses advance their
             careers both locally and internationally. With our comprehensive
             services, we ensure that healthcare professionals are equipped with
             the skills, knowledge, and opportunities to succeed globally.
