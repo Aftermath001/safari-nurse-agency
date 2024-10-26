@@ -4,8 +4,8 @@ import { assets } from "../assets/assets_frontend/assets";
 
 const KeyPersonel = () => {
   const ceo = {
-    name: "Dr. Hillary Kelum",
-    description: `Dr. Hillary Kelum is the founder and CEO of Safari Nursing Agency...`,
+    name: "Hillary Kelum RN-BScN",
+    description: `Hillary Kelum RN-BScN is the founder and CEO of Safari Nursing Agency...`,
     achievements: [
       "5+ Years of Experience in Healthcare Industry",
       "Founded Safari Nursing Agency in 2024",

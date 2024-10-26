@@ -14,9 +14,9 @@ const Footer = () => {
           />
           <p className="w-full md:w-2/3 text-gray-600 leading-6">
             Are you a healthcare professional eager to expand your knowledge and
-            qualifications? We provide access to prestigious educational
-            institutions offering programs and scholarships tailored to medical
-            professionals.
+            qualifications? We provide mentorship and guidance on various
+            pathway to international nursing registration including but not
+            limited to US, Ireland, Canada and Australia.
           </p>
         </div>
 
@@ -28,10 +28,10 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about-us">About Us</a>
+              <a href="/about">About Us</a>
             </li>
             <li>
-              <a href="/contact-us">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </li>
             <li>
               <a href="/privacy-policy">Privacy Policy</a>

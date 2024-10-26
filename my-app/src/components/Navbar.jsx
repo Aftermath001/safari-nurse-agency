@@ -1,71 +1,100 @@
-import React, { useState } from 'react';
-import { assets } from '../assets/assets_frontend/assets';
-import { NavLink, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { assets } from "../assets/assets_frontend/assets";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
-  const [token, setToken] = useState(true);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu((prev) => !prev);
+  };
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    setShowMenu(false); // Close menu on navigation
   };
 
   return (
-    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
-      {/* Logo */}
-      <img
-        onClick={() => navigate('/')}
-        className='h-12 w-12 lg:h-16 lg:w-16 rounded-full object-cover mb-0 cursor-pointer'
-        src={assets.logo}
-        alt='Logo'
-      />
+    <nav className="bg-white">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Mobile menu button */}
+          <div className="flex items-center sm:hidden">
+            <button
+              type="button"
+              className="p-2 text-gray-500 hover:text-gray-700"
+              aria-controls="mobile-menu"
+              aria-expanded={showMenu}
+              onClick={toggleMenu}
+            >
+              <span className="sr-only">Open main menu</span>
+              {showMenu ? (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              )}
+            </button>
+          </div>
 
-      {/* Full Menu (Hidden on small screens) */}
-      <ul className='hidden md:flex items-start gap-5 font-medium'>
-        <NavLink to='/'>
-          <li className='py-1'>HOME</li>
-          <hr className='border-none outline-none h-05 bg-primary w-3/5 m-auto hidden' />
-        </NavLink>
-        <NavLink to='/services'>
-          <li className='py-1'>SERVICES</li>
-          <hr className='border-none outline-none h-05 bg-primary w-3/5 m-auto hidden' />
-        </NavLink>
-        <NavLink to='/about'>
-          <li className='py-1'>ABOUT</li>
-          <hr className='border-none outline-none h-05 bg-primary w-3/5 m-auto hidden' />
-        </NavLink>
-        <NavLink to='/contact'>
-          <li className='py-1'>CONTACT</li>
-          <hr className='border-none outline-none h-05 bg-primary w-3/5 m-auto hidden' />
-        </NavLink>
-      </ul>
+          {/* Logo */}
+          <div className="flex flex-shrink-0 items-center">
+            <img
+              onClick={() => handleNavigation("/")}
+              className="h-12 w-12 lg:h-16 lg:w-16 rounded-full object-cover cursor-pointer"
+              src={assets.logo}
+              alt="Logo"
+            />
+          </div>
 
-      {/* Hamburger Icon (Visible on small screens) */}
-      <div className='md:hidden'>
-        <button onClick={toggleMenu} className='text-2xl'>
-          {showMenu ? '✖' : '☰'}
-        </button>
+          {/* Desktop Navigation Links */}
+          <div className="hidden sm:flex sm:ml-6 sm:items-center">
+            <div className="flex space-x-4">
+              {["/", "/services", "/about", "/contact"].map((path) => (
+                <NavLink
+                  key={path}
+                  to={path}
+                  onClick={() => handleNavigation(path)}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-primary text-white px-3 py-2 rounded-md text-sm font-medium"
+                      : "text-gray-600 hover:bg-gray-200 hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                  }
+                >
+                  {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Mobile Menu (Visible when showMenu is true) */}
+      {/* Mobile menu, show/hide based on menu state */}
       {showMenu && (
-        <ul className='absolute top-16 left-0 w-full bg-white flex flex-col items-center gap-4 py-4 border-t border-t-gray-400'>
-          <NavLink to='/' onClick={toggleMenu}>
-            <li className='py-1'>HOME</li>
-          </NavLink>
-          <NavLink to='/services' onClick={toggleMenu}>
-            <li className='py-1'>SERVICES</li>
-          </NavLink>
-          <NavLink to='/about' onClick={toggleMenu}>
-            <li className='py-1'>ABOUT</li>
-          </NavLink>
-          <NavLink to='/contact' onClick={toggleMenu}>
-            <li className='py-1'>CONTACT</li>
-          </NavLink>
-        </ul>
+        <div className="sm:hidden" id="mobile-menu">
+          <div className="space-y-1 px-2 pb-3 pt-2">
+            {["/", "/services", "/about", "/contact"].map((path) => (
+              <NavLink
+                key={path}
+                to={path}
+                onClick={() => handleNavigation(path)}
+                className={({ isActive }) =>
+                  isActive
+                    ? "block bg-primary text-white px-3 py-2 rounded-md text-base font-medium"
+                    : "block text-gray-600 hover:bg-gray-200 hover:text-primary px-3 py-2 rounded-md text-base font-medium"
+                }
+              >
+                {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+              </NavLink>
+            ))}
+          </div>
+        </div>
       )}
-    </div>
+    </nav>
   );
 };
 
